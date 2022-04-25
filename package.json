@@ -8,8 +8,8 @@
     "start:dev": "export NODE_ENV=local && nodemon --exec babel-node src/index.js",
     "clean": "rm -rf build && mkdir build",
     "build": "babel src/ --out-dir build",
-    "lint": "eslint --ignore-path .gitignore ."
-
+    "prettier": "prettier --ignore-path .gitignore \"src/**/*.+(js|json)\"",
+    "format": "npm run prettier -- --write"
   },
   "keywords": [],
   "author": "",
@@ -31,6 +31,8 @@
     "@babel/polyfill": "^7.12.1",
     "@babel/preset-env": "^7.16.11",
     "@babel/runtime": "^7.17.9",
-    "eslint": "^8.14.0"
+    "eslint": "^8.14.0",
+    "eslint-config-prettier": "^8.5.0",
+    "prettier": "2.6.2"
   }
 }
