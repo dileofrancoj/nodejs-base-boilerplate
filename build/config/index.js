@@ -1,7 +1,7 @@
 "use strict";
 
-if (process.env.NODE_ENV === "production") {
+if (process.env.NODE_ENV === "local") {
   require("dotenv").config({
-    path: "production.env"
+    path: ".env.local"
   });
 }
