@@ -1,6 +1,6 @@
 import { logger } from './logger'
 
-class ErrorHandler extends Error {
+export class ErrorHandler extends Error {
   constructor(statusCode, message) {
     super()
     this.statusCode = statusCode
@@ -8,13 +8,8 @@ class ErrorHandler extends Error {
   }
 }
 
-const errorHandler = (error, res) => {
+export const errorHandler = (error,res) => {
   const { statusCode, message } = error
   logger.error(`${statusCode} - ${message}`)
   res.sendStatus(statusCode)
-}
-
-module.exports = {
-  ErrorHandler,
-  errorHandler,
 }
