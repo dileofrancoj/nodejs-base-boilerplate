@@ -53,6 +53,15 @@ type(scope?): subject
 
 > 💡 Protip: Puedes ver el historial de commits de este proyecto para ver algunos ejemplos en concreto.
 
+### Convención de ramas
+
+A la hora de crear un PR, se parte de la rama <b>main</b> y se crea una branch de tipo:
+
+- feature/[description-of-feature]
+- fix/[description-of-fix]
+- hotfix/[description-of-hotfix]
+- enhancement/[description-of-enhancement]
+
 #### Estructura
 
 Cada componente debe seguir la siguiente estructura de archivos:
