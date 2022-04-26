@@ -1,6 +1,6 @@
 import { createLogger, format,transports } from "winston";
 
-module.exports = createLogger({
+export const logger = createLogger({
   format: format.combine(
     format.simple(),
     format.timestamp(),
