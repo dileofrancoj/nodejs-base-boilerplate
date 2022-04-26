@@ -1,7 +1,7 @@
 {
   "name": "base-boilerplate",
-  "version": "1.0.0",
-  "description": "",
+  "version": "1.0.1",
+  "description": "Base boiler plate from nodejs applications",
   "main": "index.js",
   "scripts": {
     "start": "npm run clean && npm run build && node build/index.js",
@@ -15,8 +15,8 @@
     "prepare": "husky install"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": "Franco Di Leo",
+  "license": "MIT",
   "dependencies": {
     "cors": "^2.8.5",
     "dotenv": "^16.0.0",
