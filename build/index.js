@@ -14,21 +14,20 @@ function _interopRequireWildcard(obj, nodeInterop) { if (!nodeInterop && obj && 
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-const app = (0, _express.default)();
+// eslint-disable-next-line no-unused-vars
+const app = (0, _express.default)(); // eslint-disable-next-line no-undef
+
 const port = process.env.PORT || 8005;
-const host = "0.0.0.0";
+const host = '0.0.0.0';
 app.use((0, _cors.default)());
 app.use(_express.default.json());
-app.use((0, _morgan.default)("combined"));
-app.use("/api/ping", (_, res) => {
+app.use((0, _morgan.default)('combined'));
+app.use('/api/ping', (_, res) => {
   res.json({
-    message: "Pong"
+    message: 'Pong'
   });
 });
-app.listen(port, host, () => console.info(`Nodejs App Listening on port: ${port}`));
-app.use((error, req, res, next) => {
-  return errorHandler(error, res);
-});
+app.listen(port, host, () => console.info(`App Listening on port: ${port}`));
 app.use((_, res) => {
   res.status(404).json({
     message: "Sorry can't find that!"
