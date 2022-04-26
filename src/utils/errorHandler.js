@@ -8,7 +8,7 @@ export class ErrorHandler extends Error {
   }
 }
 
-export const errorHandler = (error,res) => {
+export const errorHandler = (error, res) => {
   const { statusCode, message } = error
   logger.error(`${statusCode} - ${message}`)
   res.sendStatus(statusCode)
