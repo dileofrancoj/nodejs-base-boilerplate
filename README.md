@@ -55,12 +55,7 @@ type(scope?): subject
 
 ### Convención de ramas
 
-A la hora de crear un PR, se parte de la rama <b>main</b> y se crea una branch de tipo:
-
-- feature/[description-of-feature]
-- fix/[description-of-fix]
-- hotfix/[description-of-hotfix]
-- enhancement/[description-of-enhancement]
+A la hora de crear un PR, se parte de la rama <b>main</b> y se crea una branch a partir de la siguiente convención: [Commitlint](https://commitlint.js.org/#/?id=getting-started)
 
 #### Estructura
 
