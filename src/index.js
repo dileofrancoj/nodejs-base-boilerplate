@@ -22,5 +22,5 @@ app.use('/api/ping', (_, res) => {
 app.listen(port, host, () => console.info(`App Listening on port: ${port}`))
 
 app.use((_, res) => {
-  res.status(404).json({ message: Sorry can't find that!" })
+  res.status(404).json({ message: "Sorry can't find that!" })
 })
